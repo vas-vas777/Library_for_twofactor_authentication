@@ -278,6 +278,7 @@ public:
     std::string sign(/*EC_GROUP *curve, EC_KEY *key,*/ std::vector<uint8_t> data);
     std::string get_private_key(/*EC_KEY *key*/);
     std::string get_public_key(/*EC_GROUP *curve, EC_KEY *key*/);
+    std::string get_public_key_from_key(const std::string& loginkey);
     EC_KEY* generate_keys(/*EC_GROUP *name_curve*/);
     void free_group_and_key();
     int set_group();
